@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="letter-n.png" type="image/png">
+    <title>NeuroNotes by Josh</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- You can link to a Google Font for a modern look, e.g., Montserrat or Lato -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="head">
+        <nav>
+            <div class="logo">
+                NeuroNotes</div>
+            <!-- Add this button for the mobile menu -->
+            <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                &#9776; <!-- This is a common HTML entity for the hamburger icon -->
+            </button>
+            <ul id="nav-menu"> <!-- Added an ID here for JS and ARIA -->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle">Explore More <span class="arrow-down">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#progTools">Programming Tools</a></li>
+                        <li><a href="#AI-video">AI Video Tools</a></li>
+                        <li><a href="#designTools">Designing Tools</a></li>
+                        <li><a href="#social-media-apps">Most Used Apps</a></li>
+                        <li><a href="#top-games">Top games</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main id="home">
+        <section class="hero" id="hiro">
+            <h1>Explore My Project</h1>
+            <p style="color: white">Discover AI Tools, Programming Tools and more.</p>
+            <h5 style="margin-top: 200px;">NeuroNotes</h5>
+        </section>
+
+        <section id="features" class="team-section"> 
+            <h2>Artificial Intelligence</h2>
+            <p style="margin-top: 0;">(Features)</p>
+            <div class="team-grid">
+                <!-- ChatGPT Feature Card -->
+                <div class="person-card">
+                    <img src="chatgpt.png" width="120px" height="120px">
+                    <h3>ChatGPT Integration</h3>
+                    <p class="person-role">Category: AI Language Model</p>
+                    <p class="person-description">Explore the capabilities of ChatGPT. Ask questions, generate text, and see how it can assist you.</p>
+
+                    <!-- This section will be hidden by default and shown on button click -->
+                    <div class="person-details-content" id="chatgpt-details">
+                        <h4>What is ChatGPT?</h4>
+                        <!-- You might want to show the same image again, or a larger/different one -->
+                        <!-- <img src="placeholder-chatgpt-large.jpg" alt="ChatGPT Detailed View" class="person-image-expanded"> -->
+                        <p>
+                            ChatGPT, which stands for Chat Generative Pre-trained Transformer, is a large language model-based chatbot developed by OpenAI.
+                            It is capable of understanding and generating human-like text based on the input it receives.
+                            You can use it for a wide variety of tasks, such as answering questions, writing essays, summarizing text,
+                            translating languages, generating creative content, and even writing code. It learns from vast amounts of text data,
+                            allowing it to engage in coherent and contextually relevant conversations.
+                        </p>
+                        <p>
+                            <a href="https://chat.openai.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit ChatGPT</a>
+                            <!-- Replace with the actual link to ChatGPT -->
+                        </p>
+                    </div>
+
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="chatgpt-details">Read more about ChatGPT</button>
+                </div>
+                <div class="person-card">
+                    <img src="deepseek.jpg" width="120px" height="120px">
+                    <h3>DeepSeek Integration</h3>
+                    <p class="person-role">Category: AI Search Tool</p>
+                    <p class="person-description">DeepSeek uses AI to help users search, analyze, and extract insights from large datasets and unstructured data.</p>
+                
+                    <!-- This section will be hidden by default and shown on button click -->
+                    <div class="person-details-content" id="deepseek-details">
+                        <h4>What is DeepSeek?</h4>
+                        <p>
+                            DeepSeek is an AI-powered search tool designed to help users analyze and extract insights from vast amounts of unstructured data. By leveraging machine learning and natural language processing, it allows users to perform advanced searches and discover hidden patterns within datasets, documents, or media.
+                        </p>
+                        <p>
+                            Whether you're a researcher, marketer, or data scientist, DeepSeek makes it easier to find relevant information quickly and accurately, unlocking the full potential of your data.
+                        </p>
+                        <p>
+                            <a href="https://www.deepseek.ai/" target="_blank" rel="noopener noreferrer" class="external-link">Visit DeepSeek</a>
+                            <!-- Replace with the actual link to DeepSeek -->
+                        </p>
+                    </div>
+                
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="deepseek-details">Read more about DeepSeek</button>
+                </div>
+
+                <!-- Gemini AI Card -->
+                <div class="person-card">
+                    <img src="Gemini.png" width="120px" height="120px">
+                    <h3>Gemini AI</h3>
+                    <p class="person-role">Category: Multimodal AI Model</p>
+                    <p class="person-description">Discover Gemini, Google's next-generation AI model, capable of understanding and operating across various types of information like text, code, images, and video.</p>
+
+                    <div class="person-details-content" id="gemini-details">
+                        <h4>About Gemini AI</h4>
+                        <p>
+                            Gemini is Google's most capable and flexible AI model yet. Built from the ground up to be multimodal,
+                            it can seamlessly understand, operate across, and combine different types of information including text,
+                            code, audio, image, and video. Gemini is designed for a wide range of applications, from powering
+                            advanced chatbots and virtual assistants to enabling new breakthroughs in scientific research and creative endeavors.
+                            It comes in various sizes (Ultra, Pro, and Nano) to suit different tasks and devices.
+                        </p>
+                        <p>
+                            <a href="https://deepmind.google/technologies/gemini/" target="_blank" rel="noopener noreferrer" class="external-link">Learn more about Gemini on Google DeepMind</a>
+                            <!-- Replace with the most appropriate link for Gemini -->
+                        </p>
+                    </div>
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="gemini-details">Learn about Gemini</button>
+                </div>
+
+                <div class="person-card">
+                    <img src="meta.png" width="120px" height="120px">
+                    <h3>Meta AI</h3>
+                    <p class="person-role">Category: AI Research Division</p>
+                    <p class="person-description">Discover Meta AI’s open and responsible approach to AI development, powering innovations like LLaMA and FAIR research.</p>
+                
+                    <!-- This section will be hidden by default and shown on button click -->
+                    <div class="person-details-content" id="metaai-details">
+                        <h4>What is Meta AI?</h4>
+                        <p>
+                            Meta AI is the artificial intelligence division of Meta (formerly Facebook), focused on advancing state-of-the-art AI through open science and collaborative research.
+                            It’s known for creating powerful open-weight models like the LLaMA family, contributing to fields such as natural language processing, computer vision, and robotics.
+                            Meta AI also runs FAIR (Facebook AI Research), which produces some of the most cited academic work in AI today.
+                        </p>
+                        <p>
+                            <a href="https://ai.meta.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Meta AI</a>
+                        </p>
+                    </div>
+                
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="metaai-details">Read more about Meta AI</button>
+                </div>
+
+                <div class="person-card">
+                    <img src="OpenAI.jpg" width="120px" height="120px">
+                    <h3>OpenAI</h3>
+                    <p class="person-role">Category: AI Research & Development</p>
+                    <p class="person-description">Learn how OpenAI is developing safe and powerful artificial intelligence, including GPT models and tools like ChatGPT.</p>
+                
+                    <div class="person-details-content" id="openai-details">
+                        <h4>What is OpenAI?</h4>
+                        <p>
+                            OpenAI is a leading AI research and deployment company, founded in 2015 with a mission to ensure that artificial general intelligence (AGI)
+                            benefits all of humanity. OpenAI develops cutting-edge technologies such as the GPT family of language models, Codex, and DALL·E.
+                            Its most well-known product, ChatGPT, is used by millions for education, productivity, and creativity.
+                            OpenAI emphasizes safety, alignment, and responsible deployment in AI research.
+                        </p>
+                        <p>
+                            <a href="https://openai.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit OpenAI</a>
+                        </p>
+                    </div>
+                
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="openai-details">Read more about OpenAI</button>
+                </div>
+
+                <div class="person-card">
+                    <img src="anthro.png" width="120px" height="120px">
+                    <h3>Anthropic</h3>
+                    <p class="person-role">Category: AI Safety Company</p>
+                    <p class="person-description">Explore Anthropic's mission to build reliable, interpretable, and steerable AI systems like Claude.</p>
+                
+                    <div class="person-details-content" id="anthropic-details">
+                        <h4>What is Anthropic?</h4>
+                        <p>
+                            Anthropic is an AI research company founded by former OpenAI members, focused on creating AI systems that are safe and aligned with human intentions.
+                            It is best known for the Claude family of models, which are trained using a method called Constitutional AI to ensure ethical and controllable behavior.
+                            Anthropic's goal is to build general AI that people can trust, making safety a central part of every stage of development.
+                        </p>
+                        <p>
+                            <a href="https://www.anthropic.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Anthropic</a>
+                        </p>
+                    </div>
+                
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="anthropic-details">Read more about Anthropic</button>
+                </div>
+
+                <div class="person-card">
+                    <img src="mistral.jpg" width="120px" height="120px">
+                    <h3>Mistral AI</h3>
+                    <p class="person-role">Category: Open-Source AI Company</p>
+                    <p class="person-description">Check out Mistral AI’s high-performance, open-weight language models designed for developers and researchers.</p>
+                
+                    <div class="person-details-content" id="mistral-details">
+                        <h4>What is Mistral AI?</h4>
+                        <p>
+                            Mistral AI is a European AI startup known for releasing top-tier open-weight language models such as Mistral 7B and Mixtral.
+                            Their mission is to democratize access to cutting-edge AI by focusing on efficiency, transparency, and community-driven development.
+                            Mistral's models are optimized for fast inference and flexible integration, enabling developers to build AI solutions without vendor lock-in.
+                        </p>
+                        <p>
+                            <a href="https://mistral.ai/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Mistral AI</a>
+                        </p>
+                    </div>
+                
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="mistral-details">Read more about Mistral AI</button>
+                </div>
+
+                <div class="person-card">
+                    <img src="claude.jpeg" width="120px" height="120px" alt="Claude Logo">
+                    <h3>Claude AI</h3>
+                    <p class="person-role">Category: AI Language Model</p>
+                    <p class="person-description">Claude is an AI developed by Anthropic that focuses on safety and ethical AI principles. It assists with text generation and decision-making tasks.</p>
+                
+                    <div class="person-details-content" id="claude-details">
+                        <h4>What is Claude AI?</h4>
+                        <p>
+                            Claude is an AI language model created by Anthropic, designed with a focus on safety and ethical use of AI. It generates text, assists with decision-making, 
+                            and ensures the outputs adhere to responsible guidelines and standards.
+                        </p>
+                        <p><a href="https://www.anthropic.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Claude AI</a></p>
+                    </div>
+                
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="claude-details">Read more about Claude AI</button>
+                </div>
+
+                <div class="person-card">
+                    <img src="lama.jpg" width="120px" height="120px" alt="LLaMA Logo">
+                    <h3>LLaMA AI</h3>
+                    <p class="person-role">Category: Open-Source Language Model</p>
+                    <p class="person-description">LLaMA is Meta's open-source AI language model designed for research and development, empowering AI projects with its powerful capabilities.</p>
+                
+                    <div class="person-details-content" id="llama-details">
+                        <h4>What is LLaMA AI?</h4>
+                        <p>
+                            LLaMA (Large Language Model Meta AI) is an open-source language model developed by Meta. It is designed to be flexible and powerful, 
+                            suitable for research purposes and development of AI tools. It is one of the latest models in the open-source AI community.
+                        </p>
+                        <p><a href="https://ai.facebook.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit LLaMA AI</a></p>
+                    </div>
+                
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="llama-details">Read more about LLaMA AI</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="progTools" class="team-section">
+            <h2>Programming Tools</h2>
+            <div class="team-grid">
+                <div class="person-card">
+                    <img src="vscode.jpg" width="120px" height="120px">
+                    <h3>Visual Studio Code</h3>
+                    <p class="person-role">Category: Code Editor</p>
+                    <p class="person-description">VS Code is a powerful, open-source editor by Microsoft with rich extensions, Git support, and multi-language development tools.</p>
+                
+                    <div class="person-details-content" id="vscode-details">
+                        <h4>What is Visual Studio Code?</h4>
+                        <p>
+                            Visual Studio Code is a lightweight yet powerful editor for web, cloud, and desktop development. It includes features like IntelliSense, integrated terminal, debugging, and a vast extension marketplace.
+                        </p>
+                        <p>
+                            <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Visual Studio Code</a>
+                        </p>
+                    </div>
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="vscode-details">Read more about Visual Studio Code</button>
+                </div>
+            <div class="person-card">
+                <img src="sublime.png" width="120px" height="120px">
+                <h3>Sublime Text</h3>
+                <p class="person-role">Category: Code Editor</p>
+                <p class="person-description">Sublime Text is a fast, lightweight, and elegant code editor with a focus on speed and usability.</p>
+            
+                <div class="person-details-content" id="sublime-details">
+                    <h4>What is Sublime Text?</h4>
+                    <p>
+                        Sublime Text is a sophisticated text editor for code, markup, and prose. Known for its slick user interface, keyboard shortcuts, and high performance,
+                        it supports multiple programming languages and can be extended via plugins and packages.
+                    </p>
+                    <p>
+                        <a href="https://www.sublimetext.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Sublime Text</a>
+                    </p>
+                </div>
+            
+                <button class="btn-toggle-details" aria-expanded="false" aria-controls="sublime-details">Read more about Sublime Text</button>
+            </div>
+            <div class="person-card">
+                <img src="atom.jpg" width="120px" height="120px">
+                <h3>Atom</h3>
+                <p class="person-role">Category: Code Editor</p>
+                <p class="person-description">A hackable text editor for the 21st century, created by GitHub with deep Git integration and customization.</p>
+            
+                <div class="person-details-content" id="atom-details">
+                    <h4>What is Atom?</h4>
+                    <p>
+                        Atom is a free and open-source text editor built by GitHub. Known for its flexibility and customizability,
+                        Atom supports a wide range of packages, themes, and integrations to suit any development workflow.
+                    </p>
+                    <p>
+                        <a href="https://atom.io/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Atom</a>
+                    </p>
+                </div>
+            
+                <button class="btn-toggle-details" aria-expanded="false" aria-controls="atom-details">Read more about Atom</button>
+            </div>
+            <div class="person-card">
+                <img src="intellij.png" width="120px" height="120px">
+                <h3>IntelliJ IDEA</h3>
+                <p class="person-role">Category: IDE (Integrated Development Environment)</p>
+                <p class="person-description">A smart, full-featured IDE developed by JetBrains for Java and a wide range of other languages.</p>
+            
+                <div class="person-details-content" id="intellij-details">
+                    <h4>What is IntelliJ IDEA?</h4>
+                    <p>
+                        IntelliJ IDEA is a professional IDE built for productivity and deep code insight. While it's particularly powerful for Java development,
+                        it also supports Kotlin, JavaScript, TypeScript, SQL, and more, with intelligent code analysis and refactoring tools.
+                    </p>
+                    <p>
+                        <a href="https://www.jetbrains.com/idea/" target="_blank" rel="noopener noreferrer" class="external-link">Visit IntelliJ IDEA</a>
+                    </p>
+                </div>
+            
+                <button class="btn-toggle-details" aria-expanded="false" aria-controls="intellij-details">Read more about IntelliJ IDEA</button>
+            </div>
+            <div class="person-card">
+                <img src="eclipse.jpg" width="120px" height="120px">
+                <h3>Eclipse IDE</h3>
+                <p class="person-role">Category: IDE (Integrated Development Environment)</p>
+                <p class="person-description">A robust, open-source IDE for Java and other languages, widely used in enterprise environments.</p>
+            
+                <div class="person-details-content" id="eclipse-details">
+                    <h4>What is Eclipse IDE?</h4>
+                    <p>
+                        Eclipse is a popular open-source IDE with a modular architecture. Best known for Java development,
+                        Eclipse also supports C/C++, Python, and web development via plugins. It's favored in large-scale and enterprise software projects.
+                    </p>
+                    <p>
+                        <a href="https://www.eclipse.org/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Eclipse IDE</a>
+                    </p>
+                </div>
+            
+                <button class="btn-toggle-details" aria-expanded="false" aria-controls="eclipse-details">Read more about Eclipse IDE</button>
+            </div>
+            <div class="person-card">
+                <img src="cursor.png" width="120px" height="120px">
+                <h3>Cursor</h3>
+                <p class="person-role">Category: AI Code Editor</p>
+                <p class="person-description">Cursor is a modern code editor built on VS Code, supercharged with powerful AI coding assistance for faster development.</p>
+            
+                <div class="person-details-content" id="cursor-details">
+                    <h4>What is Cursor?</h4>
+                    <p>
+                        Cursor is an AI-first code editor based on Visual Studio Code, optimized for developer productivity.
+                        It offers inline code completions, intelligent refactoring, and an embedded chat assistant — making it ideal for modern software development workflows.
+                        Cursor integrates AI deeply into your coding experience without sacrificing the flexibility of VS Code.
+                    </p>
+                    <p>
+                        <a href="https://www.cursor.sh/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Cursor</a>
+                    </p>
+                </div>
+            
+                <button class="btn-toggle-details" aria-expanded="false" aria-controls="cursor-details">Read more about Cursor</button>
+            </div>   
+            <div class="person-card">
+                <img src="neovim.jpg" width="120px" height="120px">
+                <h3>Neovim</h3>
+                <p class="person-role">Category: Terminal-Based Editor</p>
+                <p class="person-description">Neovim is a powerful terminal-based editor optimized for speed, extensibility, and keyboard efficiency.</p>
+            
+                <div class="person-details-content" id="neovim-details">
+                    <h4>What is Neovim?</h4>
+                    <p>
+                        Neovim is a modern refactor of Vim that supports Lua scripting and asynchronous plugins. It’s loved by developers who prefer lightweight, terminal-based environments and fully customizable setups.
+                    </p>
+                    <p>
+                        <a href="https://neovim.io/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Neovim</a>
+                    </p>
+                </div>
+                <button class="btn-toggle-details" aria-expanded="false" aria-controls="neovim-details">Read more about Neovim</button>
+            </div>
+            <div class="person-card">
+                <img src="xcode.jpg" width="120px" height="120px">
+                <h3>Xcode</h3>
+                <p class="person-role">Category: IDE (Apple Platforms)</p>
+                <p class="person-description">Xcode is Apple’s official IDE for building apps across macOS, iOS, iPadOS, watchOS, and tvOS using Swift and Objective-C.</p>
+            
+                <div class="person-details-content" id="xcode-details">
+                    <h4>What is Xcode?</h4>
+                    <p>
+                        Xcode is an integrated development environment provided by Apple, offering a complete toolset for building apps on Apple platforms.
+                        It includes a code editor, UI designer (Interface Builder), debugger, simulator, and integrated performance tools, tailored for Swift and Objective-C.
+                    </p>
+                    <p>
+                        <a href="https://developer.apple.com/xcode/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Xcode</a>
+                    </p>
+                </div>
+                <button class="btn-toggle-details" aria-expanded="false" aria-controls="xcode-details">Read more about Xcode</button>
+            </div>
+            <div class="person-card">
+                <img src="pycharm.jpg" width="120px" height="120px">
+                <h3>PyCharm</h3>
+                <p class="person-role">Category: Python IDE</p>
+                <p class="person-description">PyCharm is a full-featured Python IDE developed by JetBrains, with smart coding tools and scientific support.</p>
+            
+                <div class="person-details-content" id="pycharm-details">
+                    <h4>What is PyCharm?</h4>
+                    <p>
+                        PyCharm is a professional IDE for Python that supports intelligent code completion, powerful debugging, virtual environment management,
+                        and frameworks like Django and Flask. It also includes tools for data science and scientific computing.
+                    </p>
+                    <p>
+                        <a href="https://www.jetbrains.com/pycharm/" target="_blank" rel="noopener noreferrer" class="external-link">Visit PyCharm</a>
+                    </p>
+                </div>
+                <button class="btn-toggle-details" aria-expanded="false" aria-controls="pycharm-details">Read more about PyCharm</button>
+            </div>
+            <div class="person-card">
+                <img src="webstorm.png" width="120px" height="120px">
+                <h3>WebStorm</h3>
+                <p class="person-role">Category: JavaScript/Web IDE</p>
+                <p class="person-description">WebStorm is a JetBrains IDE built for modern web development with advanced support for JavaScript and frameworks.</p>
+            
+                <div class="person-details-content" id="webstorm-details">
+                    <h4>What is WebStorm?</h4>
+                    <p>
+                        WebStorm is a powerful IDE focused on JavaScript, TypeScript, and front-end frameworks like React, Vue, and Angular.
+                        It includes smart code analysis, testing tools, integrated terminal, Git tools, and debugging for both client-side and Node.js apps.
+                    </p>
+                    <p>
+                        <a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="noopener noreferrer" class="external-link">Visit WebStorm</a>
+                    </p>
+                </div>
+                <button class="btn-toggle-details" aria-expanded="false" aria-controls="webstorm-details">Read more about WebStorm</button>
+            </div>   
+        </div>                     
+        </section>
+
+        <section id="AI-video" class="team-section">
+            <h2>AI Video Generator Tools</h2>
+            <div class="team-grid">
+                <div class="person-card">
+                    <img src="pictory.png" width="120px" height="120px">
+                    <h3>Pictory</h3>
+                    <p class="person-role">Category: AI Video Generator</p>
+                    <p class="person-description">Pictory allows you to create professional-looking videos from text, images, or blog posts with its AI-powered tools.</p>
+                
+                    <div class="person-details-content" id="pictory-details">
+                        <h4>What is Pictory?</h4>
+                        <p>
+                            Pictory is an AI video creation tool that turns text and blog posts into engaging video content. With the ability to add voiceovers, images, and animations, Pictory allows you to create marketing, training, and social media videos easily.
+                        </p>
+                        <p>
+                            <a href="https://pictory.ai/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Pictory</a>
+                        </p>
+                    </div>
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="pictory-details">Read more about Pictory</button>
+                </div>
+                <div class="person-card">
+                    <img src="lumen.png" width="120px" height="120px">
+                    <h3>Lumen5</h3>
+                    <p class="person-role">Category: AI Video Generator</p>
+                    <p class="person-description">Lumen5 turns your text, articles, and blogs into engaging videos for marketing and social media with AI automation.</p>
+                
+                    <div class="person-details-content" id="lumen5-details">
+                        <h4>What is Lumen5?</h4>
+                        <p>
+                            Lumen5 uses AI to create video content from text. It automatically matches the content with relevant images, videos, and music, helping you create engaging videos in minutes. It's particularly useful for marketers looking to repurpose blog content into video.
+                        </p>
+                        <p>
+                            <a href="https://www.lumen5.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Lumen5</a>
+                        </p>
+                    </div>
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="lumen5-details">Read more about Lumen5</button>
+                </div>
+                <div class="person-card">
+                    <img src="synthesia.png" width="120px" height="120px">
+                    <h3>Synthesia</h3>
+                    <p class="person-role">Category: AI Video Creation</p>
+                    <p class="person-description">Synthesia allows you to create AI-generated videos with synthetic avatars, making it great for corporate videos, training, and more.</p>
+                
+                    <div class="person-details-content" id="synthesia-details">
+                        <h4>What is Synthesia?</h4>
+                        <p>
+                            Synthesia is a cutting-edge AI tool that allows you to create videos with AI-generated avatars that speak your script. It’s particularly useful for creating training videos, corporate communication, and content in multiple languages without needing a human presenter.
+                        </p>
+                        <p>
+                            <a href="https://www.synthesia.io/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Synthesia</a>
+                        </p>
+                    </div>
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="synthesia-details">Read more about Synthesia</button>
+                </div>
+                <div class="person-card">
+                    <img src="deepbrain.jpg" width="120px" height="120px">
+                    <h3>DeepBrain</h3>
+                    <p class="person-role">Category: AI Video Generator</p>
+                    <p class="person-description">DeepBrain uses AI to generate videos with voiceovers from just a few lines of text, great for creating informative content.</p>
+                
+                    <div class="person-details-content" id="deepbrain-details">
+                        <h4>What is DeepBrain?</h4>
+                        <p>
+                            DeepBrain is an AI-powered video creation platform that can convert text into engaging videos with realistic voiceovers. It's ideal for creating educational content, explainer videos, and more, all generated automatically with advanced AI.
+                        </p>
+                        <p>
+                            <a href="https://www.deepbrain.io/" target="_blank" rel="noopener noreferrer" class="external-link">Visit DeepBrain</a>
+                        </p>
+                    </div>
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="deepbrain-details">Read more about DeepBrain</button>
+                </div>
+                <div class="person-card">
+                    <img src="runway.png" width="120px" height="120px">
+                    <h3>Runway</h3>
+                    <p class="person-role">Category: AI Video Editing</p>
+                    <p class="person-description">Runway offers AI-powered video editing and creation tools, perfect for creators, advertisers, and filmmakers.</p>
+                
+                    <div class="person-details-content" id="runway-details">
+                        <h4>What is Runway?</h4>
+                        <p>
+                            Runway is a platform that combines AI with creative video editing tools. It offers powerful features such as automatic background removal, text-to-video generation, and AI-assisted editing, making it a great choice for creators looking for fast and efficient video production.
+                        </p>
+                        <p>
+                            <a href="https://runwayml.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Runway</a>
+                        </p>
+                    </div>
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="runway-details">Read more about Runway</button>
+                </div>
+                <div class="person-card">
+                    <img src="descript.jpg" width="120px" height="120px">
+                    <h3>Descript</h3>
+                    <p class="person-role">Category: AI Video Editing & Transcription</p>
+                    <p class="person-description">Descript is an AI-powered video editor and transcription tool that lets you edit video as easily as text.</p>
+                
+                    <div class="person-details-content" id="descript-details">
+                        <h4>What is Descript?</h4>
+                        <p>
+                            Descript is a unique video editing tool that combines transcription, screen recording, and video editing into one. It allows you to edit video by editing the text transcript, making it incredibly easy to produce polished video content.
+                        </p>
+                        <p>
+                            <a href="https://www.descript.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Descript</a>
+                        </p>
+                    </div>
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="descript-details">Read more about Descript</button>
+                </div>
+                <div class="person-card">
+                    <img src="animoto.jpg" width="120px" height="120px">
+                    <h3>Animoto</h3>
+                    <p class="person-role">Category: Video Creation Tool</p>
+                    <p class="person-description">Animoto makes it easy to create professional videos from your photos and video clips with its AI-powered templates and editing tools.</p>
+                
+                    <div class="person-details-content" id="animoto-details">
+                        <h4>What is Animoto?</h4>
+                        <p>
+                            Animoto is a cloud-based video creation tool that helps you make professional-looking videos quickly by combining photos, video clips, and music into stunning videos. It uses AI to automate much of the video editing process.
+                        </p>
+                        <p>
+                            <a href="https://animoto.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Animoto</a>
+                        </p>
+                    </div>
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="animoto-details">Read more about Animoto</button>
+                </div>
+                                            
+                
+            </div>
+        </section>
+
+        <section id="designTools" class="team-section">
+            <h2>Design Tools</h2>
+            <div class="team-grid">
+                <div class="person-card">
+                    <img src="figma.jpg" width="120px" height="120px">
+                    <h3>Figma</h3>
+                    <p class="person-role">Category: UI/UX Design Tool</p>
+                    <p class="person-description">Figma is a collaborative design and prototyping tool used for creating modern interfaces and design systems.</p>
+                
+                    <div class="person-details-content" id="figma-details">
+                        <h4>What is Figma?</h4>
+                        <p>
+                            Figma is a cloud-based interface design tool that allows multiple users to collaborate in real time. It supports design systems, responsive layouts,
+                            prototyping, and developer handoff, making it a favorite for product teams and design agencies.
+                        </p>
+                        <p>
+                            <a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Figma</a>
+                        </p>
+                    </div>
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="figma-details">Read more about Figma</button>
+                </div>
+                <div class="person-card">
+                    <img src="adobexd.png" width="120px" height="120px">
+                    <h3>Adobe XD</h3>
+                    <p class="person-role">Category: UX/UI Prototyping Tool</p>
+                    <p class="person-description">Adobe XD is a vector-based tool for wireframing, designing, and prototyping user interfaces and user experiences.</p>
+                
+                    <div class="person-details-content" id="adobexd-details">
+                        <h4>What is Adobe XD?</h4>
+                        <p>
+                            Adobe XD is a design and prototyping tool for UI/UX designers, offering vector design tools, animation support, and seamless integration with other Adobe products.
+                            It's used for creating wireframes, screen mockups, and interactive prototypes.
+                        </p>
+                        <p>
+                            <a href="https://www.adobe.com/products/xd.html" target="_blank" rel="noopener noreferrer" class="external-link">Visit Adobe XD</a>
+                        </p>
+                    </div>
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="adobexd-details">Read more about Adobe XD</button>
+                </div>
+                <div class="person-card">
+                    <img src="photosho.jpg" width="120px" height="120px" alt="Adobe Photoshop Logo">
+                    <h3>Adobe Photoshop</h3>
+                    <p class="person-role">Category: Image Editing Software</p>
+                    <p class="person-description">
+                        Adobe Photoshop is a powerful image editing tool used for photo manipulation, digital painting, graphic design, and more.
+                    </p>
+                
+                    <div class="person-details-content" id="photoshop-details">
+                        <h4>What is Adobe Photoshop?</h4>
+                        <p>
+                            Adobe Photoshop is the industry-standard software for raster image editing, offering a wide range of tools for photography, graphic design, web design, and digital art.
+                            It supports layers, masks, smart objects, and numerous filters for advanced editing.
+                        </p>
+                        <p>
+                            <a href="https://www.adobe.com/products/photoshop.html" target="_blank" rel="noopener noreferrer" class="external-link">Visit Adobe Photoshop</a>
+                        </p>
+                    </div>
+                
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="photoshop-details">
+                        Read more about Adobe Photoshop
+                    </button>
+                </div>
+                <div class="person-card">
+                    <img src="sketch.png" width="120px" height="120px">
+                    <h3>Sketch</h3>
+                    <p class="person-role">Category: Interface Design Tool (macOS)</p>
+                    <p class="person-description">Sketch is a vector-based design tool for macOS, widely used for web and app UI design with a rich plugin ecosystem.</p>
+                
+                    <div class="person-details-content" id="sketch-details">
+                        <h4>What is Sketch?</h4>
+                        <p>
+                            Sketch is a macOS design tool tailored for digital product design. It features powerful vector editing, symbol reuse, prototyping tools, and team collaboration options.
+                            It's particularly strong in UI design workflows.
+                        </p>
+                        <p>
+                            <a href="https://www.sketch.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Sketch</a>
+                        </p>
+                    </div>
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="sketch-details">Read more about Sketch</button>
+                </div>
+                <div class="person-card">
+                    <img src="affinity.png" width="120px" height="120px">
+                    <h3>Affinity Designer</h3>
+                    <p class="person-role">Category: Graphic Design Tool</p>
+                    <p class="person-description">Affinity Designer is a vector and raster design tool with professional-level features for illustrations, branding, and UI work.</p>
+                
+                    <div class="person-details-content" id="affinity-details">
+                        <h4>What is Affinity Designer?</h4>
+                        <p>
+                            Affinity Designer is a powerful graphic design software used for creating illustrations, icons, UI mockups, and branding. It supports vector and pixel workflows in one app,
+                            and is a popular alternative to Adobe Illustrator.
+                        </p>
+                        <p>
+                            <a href="https://affinity.serif.com/en-us/designer/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Affinity Designer</a>
+                        </p>
+                    </div>
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="affinity-details">Read more about Affinity Designer</button>
+                </div>
+                <div class="person-card">
+                    <img src="penpot.png" width="120px" height="120px">
+                    <h3>Penpot</h3>
+                    <p class="person-role">Category: Open-Source Design Tool</p>
+                    <p class="person-description">Penpot is a collaborative, web-based UI/UX design platform that's completely open-source and browser-based.</p>
+                
+                    <div class="person-details-content" id="penpot-details">
+                        <h4>What is Penpot?</h4>
+                        <p>
+                            Penpot is an open-source design and prototyping tool for cross-functional teams. It runs entirely in the browser, supports collaboration, and is especially appealing to teams that prefer open tools and self-hosting options.
+                        </p>
+                        <p>
+                            <a href="https://penpot.app/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Penpot</a>
+                        </p>
+                    </div>
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="penpot-details">Read more about Penpot</button>
+                </div>
+                <div class="person-card">
+                    <img src="inkscape.png" width="120px" height="120px">
+                    <h3>Inkscape</h3>
+                    <p class="person-role">Category: Open-Source Vector Design Tool</p>
+                    <p class="person-description">Inkscape is an open-source vector graphics editor, great for illustrations, logo designs, and creating scalable graphics.</p>
+                
+                    <div class="person-details-content" id="inkscape-details">
+                        <h4>What is Inkscape?</h4>
+                        <p>
+                            Inkscape is a free and open-source vector graphics editor, often seen as an alternative to Adobe Illustrator. It's perfect for creating scalable graphics such as logos, icons, and diagrams.
+                        </p>
+                        <p>
+                            <a href="https://inkscape.org/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Inkscape</a>
+                        </p>
+                    </div>
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="inkscape-details">Read more about Inkscape</button>
+                </div>
+                <div class="person-card">
+                    <img src="gravit.jpg" width="120px" height="120px">
+                    <h3>Gravit Designer</h3>
+                    <p class="person-role">Category: Graphic Design Tool</p>
+                    <p class="person-description">Gravit Designer is a free, browser-based design tool for vector graphics, UI design, and illustrations.</p>
+                
+                    <div class="person-details-content" id="gravit-details">
+                        <h4>What is Gravit Designer?</h4>
+                        <p>
+                            Gravit Designer is a free and powerful design tool that runs in the browser. It supports vector-based design for UI, illustrations, branding, and icons. It's a great alternative for designers looking for a cross-platform solution.
+                        </p>
+                        <p>
+                            <a href="https://www.designer.io/en/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Gravit Designer</a>
+                        </p>
+                    </div>
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="gravit-details">Read more about Gravit Designer</button>
+                </div>  
+                <div class="person-card">
+                    <img src="canva.png" width="120px" height="120px">
+                    <h3>Canva</h3>
+                    <p class="person-role">Category: Graphic Design Tool</p>
+                    <p class="person-description">Canva is an easy-to-use graphic design tool ideal for creating social media graphics, presentations, posters, and more.</p>
+                
+                    <div class="person-details-content" id="canva-details">
+                        <h4>What is Canva?</h4>
+                        <p>
+                            Canva is a user-friendly design tool that allows anyone, even with no design experience, to create stunning visuals. It offers pre-made templates, stock photos, and intuitive design tools to make professional designs accessible to all.
+                        </p>
+                        <p>
+                            <a href="https://www.canva.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Canva</a>
+                        </p>
+                    </div>
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="canva-details">Read more about Canva</button>
+                </div>
+                <div class="person-card">
+                    <img src="affinity-photo.jpg" width="120px" height="120px">
+                    <h3>Affinity Photo</h3>
+                    <p class="person-role">Category: Photo Editing Tool</p>
+                    <p class="person-description">Affinity Photo is a professional photo editing software for tasks such as retouching, color correction, and compositing.</p>
+                
+                    <div class="person-details-content" id="affinity-photo-details">
+                        <h4>What is Affinity Photo?</h4>
+                        <p>
+                            Affinity Photo is a powerful photo editing tool used by professionals for detailed retouching, image manipulation, and compositing. It includes features like advanced masking, RAW editing, and layer styles.
+                        </p>
+                        <p>
+                            <a href="https://affinity.serif.com/en-us/photo/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Affinity Photo</a>
+                        </p>
+                    </div>
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="affinity-photo-details">Read more about Affinity Photo</button>
+                </div>
+                <div class="person-card">
+                    <img src="marvel.png" width="120px" height="120px">
+                    <h3>Marvel App</h3>
+                    <p class="person-role">Category: Design & Prototyping Tool</p>
+                    <p class="person-description">Marvel App is a design tool that enables designers to quickly create prototypes and wireframes for web and mobile apps.</p>
+                
+                    <div class="person-details-content" id="marvel-details">
+                        <h4>What is Marvel App?</h4>
+                        <p>
+                            Marvel App is an intuitive design and prototyping tool that lets you create interactive prototypes, user flows, and mockups. It’s known for its ease of use and integration with other tools for testing and handoff.
+                        </p>
+                        <p>
+                            <a href="https://marvelapp.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Marvel App</a>
+                        </p>
+                    </div>
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="marvel-details">Read more about Marvel App</button>
+                </div>
+                <div class="person-card">
+                    <img src="lunacy.jpg" width="120px" height="120px">
+                    <h3>Lunacy</h3>
+                    <p class="person-role">Category: Graphic Design Tool</p>
+                    <p class="person-description">Lunacy is a free design tool that’s compatible with Sketch files and comes with powerful vector editing and UI design features.</p>
+                
+                    <div class="person-details-content" id="lunacy-details">
+                        <h4>What is Lunacy?</h4>
+                        <p>
+                            Lunacy is a free, cross-platform design tool that works natively with Sketch files, making it a great option for designers looking for a free alternative. It offers vector editing, artboard support, and a variety of design resources.
+                        </p>
+                        <p>
+                            <a href="https://icons8.com/lunacy" target="_blank" rel="noopener noreferrer" class="external-link">Visit Lunacy</a>
+                        </p>
+                    </div>
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="lunacy-details">Read more about Lunacy</button>
+                </div>
+                <div class="person-card">
+                    <img src="trello.jpg" width="120px" height="120px">
+                    <h3>Trello</h3>
+                    <p class="person-role">Category: Project Management Tool</p>
+                    <p class="person-description">Trello is a popular, easy-to-use project management tool that’s great for organizing design workflows and tasks.</p>
+                
+                    <div class="person-details-content" id="trello-details">
+                        <h4>What is Trello?</h4>
+                        <p>
+                            Trello is a visual collaboration tool that enables teams to organize tasks and workflows using boards, lists, and cards. It's particularly useful for tracking design projects, revisions, and team collaboration.
+                        </p>
+                        <p>
+                            <a href="https://trello.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Trello</a>
+                        </p>
+                    </div>
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="trello-details">Read more about Trello</button>
+                </div>
+                                                
+                        
+            </div>
+        </section>
+
+        <!-- Somewhere in your <main> section, after the #features section or #about section -->
+        <section id="social-media-apps" class="team-section"> 
+            <h2>Most Used Apps</h2>
+            <div class="team-grid">
+            <div class="person-card">
+                <img src="instagram.jpg" width="120px" height="120px" alt="Instagram Logo">
+                <h3>Instagram</h3>
+                <p class="person-role">Category: Photo & Video Sharing</p>
+                <p class="person-description">A visual social media platform to share photos, videos, and Stories with followers.</p>
+    
+                <div class="person-details-content" id="instagram-details">
+                    <h4>What is Instagram?</h4>
+                    <p>
+                        Instagram is a social networking app created for sharing photos and videos from a smartphone. Users can upload content, apply filters, and connect with others through likes, comments, and direct messages. It’s owned by Meta (formerly Facebook).
+                    </p>
+                    <p><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Instagram</a></p>
+                </div>
+    
+                <button class="btn-toggle-details" aria-expanded="false" aria-controls="instagram-details">Read more about Instagram</button>
+            </div>
+    
+            <!-- TikTok -->
+            <div class="person-card">
+                <img src="tiktok.jpg" width="120px" height="120px" alt="TikTok Logo">
+                <h3>TikTok</h3>
+                <p class="person-role">Category: Short Video Platform</p>
+                <p class="person-description">A platform to create and discover short-form music, dance, and comedy videos.</p>
+    
+                <div class="person-details-content" id="tiktok-details">
+                    <h4>What is TikTok?</h4>
+                    <p>
+                        TikTok is a popular app for creating and sharing short videos, often with music and effects. Known for its viral challenges and algorithmic content discovery, TikTok has become a cultural trendsetter across the globe.
+                    </p>
+                    <p><a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit TikTok</a></p>
+                </div>
+    
+                <button class="btn-toggle-details" aria-expanded="false" aria-controls="tiktok-details">Read more about TikTok</button>
+            </div>
+    
+            <!-- WhatsApp -->
+            <div class="person-card">
+                <img src="whatsapp.png" width="120px" height="120px" alt="WhatsApp Logo">
+                <h3>WhatsApp</h3>
+                <p class="person-role">Category: Messaging</p>
+                <p class="person-description">A secure messaging app used for chats, voice, and video calls worldwide.</p>
+    
+                <div class="person-details-content" id="whatsapp-details">
+                    <h4>What is WhatsApp?</h4>
+                    <p>
+                        WhatsApp is a free messaging app that uses internet data to send messages, make calls, and share media. It's known for end-to-end encryption and is widely used for personal and business communication.
+                    </p>
+                    <p><a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit WhatsApp</a></p>
+                </div>
+    
+                <button class="btn-toggle-details" aria-expanded="false" aria-controls="whatsapp-details">Read more about WhatsApp</button>
+            </div>
+
+            <div class="person-card">
+                <img src="facebook.png" width="120px" height="120px" alt="Facebook Logo">
+                <h3>Facebook</h3>
+                <p class="person-role">Category: Social Networking</p>
+                <p class="person-description">Facebook helps you connect and share with friends, family, and communities.</p>
+            
+                <div class="person-details-content" id="facebook-details">
+                    <h4>What is Facebook?</h4>
+                    <p>
+                        Facebook is one of the oldest and most widely used social networks globally. It allows users to share posts, join groups, create events, and connect with people worldwide. Owned by Meta, it also serves as a hub for business pages and advertising.
+                    </p>
+                    <p><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Facebook</a></p>
+                </div>
+            
+                <button class="btn-toggle-details" aria-expanded="false" aria-controls="facebook-details">Read more about Facebook</button>
+            </div>
+            
+            <!-- YouTube -->
+            <div class="person-card">
+                <img src="youtube.jpg" width="120px" height="120px" alt="YouTube Logo">
+                <h3>YouTube</h3>
+                <p class="person-role">Category: Video Sharing</p>
+                <p class="person-description">Watch, upload, and share videos on the largest video platform on the internet.</p>
+            
+                <div class="person-details-content" id="youtube-details">
+                    <h4>What is YouTube?</h4>
+                    <p>
+                        YouTube is the world's most popular video platform where users can watch, upload, comment on, and share videos. Owned by Google, it supports creators, influencers, educators, and streamers across countless categories from entertainment to education.
+                    </p>
+                    <p><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit YouTube</a></p>
+                </div>
+            
+                <button class="btn-toggle-details" aria-expanded="false" aria-controls="youtube-details">Read more about YouTube</button>
+            </div>
+            
+            <!-- Snapchat -->
+            <div class="person-card">
+                <img src="snapchat.jpg" width="120px" height="120px" alt="Snapchat Logo">
+                <h3>Snapchat</h3>
+                <p class="person-role">Category: Multimedia Messaging</p>
+                <p class="person-description">Send photos and videos that disappear after being viewed, with creative filters and AR features.</p>
+            
+                <div class="person-details-content" id="snapchat-details">
+                    <h4>What is Snapchat?</h4>
+                    <p>
+                        Snapchat is a mobile messaging app known for its disappearing messages and creative lenses. Users can send Snaps, share Stories, and explore content through the Discover feed. It’s especially popular among younger audiences for real-time visual communication.
+                    </p>
+                    <p><a href="https://www.snapchat.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Snapchat</a></p>
+                </div>
+            
+                <button class="btn-toggle-details" aria-expanded="false" aria-controls="snapchat-details">Read more about Snapchat</button>
+            </div>
+            
+            <!-- Twitter/X -->
+            <div class="person-card">
+                <img src="twitter.jpg" width="120px" height="120px" alt="Twitter Logo">
+                <h3>Twitter (X)</h3>
+                <p class="person-role">Category: Microblogging</p>
+                <p class="person-description">A platform for real-time updates, trending topics, and short-form content known as tweets.</p>
+            
+                <div class="person-details-content" id="twitter-details">
+                    <h4>What is Twitter (X)?</h4>
+                    <p>
+                        Twitter, rebranded as X, is a microblogging platform where users post short messages (tweets) to express opinions, follow trends, and interact with global communities. Known for news and live conversations, it's used by individuals, organizations, and governments.
+                    </p>
+                    <p><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Twitter/X</a></p>
+                </div>
+            
+                <button class="btn-toggle-details" aria-expanded="false" aria-controls="twitter-details">Read more about Twitter</button>
+            </div> 
+        </div>
+        </section>
+
+        <section id="datingApps" class="team-section">
+            <h2>Dating Apps</h2>
+            <div class="team-grid">
+                <div class="person-card">
+                    <img src="tinder.png" width="120px" height="120px">
+                    <h3>Tinder</h3>
+                    <p class="person-role">Category: Dating App</p>
+                    <p class="person-description">Tinder is one of the most popular dating apps, known for its swipe-right, swipe-left interface to meet new people.</p>
+                
+                    <div class="person-details-content" id="tinder-details">
+                        <h4>What is Tinder?</h4>
+                        <p>
+                            Tinder is a mobile dating app that allows users to browse through potential matches in their area. The app uses a swiping mechanism to let users indicate interest (right swipe) or pass (left swipe) on others' profiles.
+                            It includes features like messaging, "Tinder Boost", and location-based matching. Tinder is known for its quick, user-friendly interface and is popular among people seeking both casual and serious relationships.
+                        </p>
+                        <p>
+                            <a href="https://www.tinder.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Tinder</a>
+                        </p>
+                    </div>
+                
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="tinder-details">Read more about Tinder</button>
+                </div>
+                <div class="person-card">
+                    <img src="bumble.jpeg" width="120px" height="120px">
+                    <h3>Bumble</h3>
+                    <p class="person-role">Category: Dating App</p>
+                    <p class="person-description">Bumble empowers women by allowing only them to initiate conversations, making it one of the most unique dating platforms out there.</p>
+                
+                    <div class="person-details-content" id="bumble-details">
+                        <h4>What is Bumble?</h4>
+                        <p>
+                            Bumble is a dating app that puts women in control. In heterosexual matches, only women can initiate conversations once a match is made. It’s designed to be a safe space where users can look for love, friendship, and professional networking.
+                            Bumble is known for its focus on creating meaningful connections and empowering women to make the first move.
+                        </p>
+                        <p>
+                            <a href="https://bumble.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Bumble</a>
+                        </p>
+                    </div>
+                
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="bumble-details">Read more about Bumble</button>
+                </div>
+                <div class="person-card">
+                    <img src="okcupid.png" width="120px" height="120px">
+                    <h3>OkCupid</h3>
+                    <p class="person-role">Category: Dating App</p>
+                    <p class="person-description">OkCupid matches people based on their answers to detailed questions about preferences, lifestyle, and values, ensuring compatibility.</p>
+                
+                    <div class="person-details-content" id="okcupid-details">
+                        <h4>What is OkCupid?</h4>
+                        <p>
+                            OkCupid is an online dating platform that uses a detailed questionnaire to match users based on personality, preferences, and shared values. Users can filter matches based on things like religion, hobbies, and life goals. OkCupid has a reputation for attracting people looking for deeper, long-term connections.
+                        </p>
+                        <p>
+                            <a href="https://www.okcupid.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit OkCupid</a>
+                        </p>
+                    </div>
+                
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="okcupid-details">Read more about OkCupid</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="top-games" class="team-section"> 
+            <h2>Most Played Games</h2>
+            <div class="team-grid">
+        
+                <!-- Minecraft -->
+                <div class="person-card">
+                    <img src="minecraft.jpg" width="120px" height="120px" alt="Minecraft Logo">
+                    <h3>Minecraft</h3>
+                    <p class="person-role">Category: Sandbox / Survival</p>
+                    <p class="person-description">Build, explore, and survive in a blocky world of endless creativity.</p>
+        
+                    <div class="person-details-content" id="minecraft-details">
+                        <h4>What is Minecraft?</h4>
+                        <p>
+                            Minecraft is a sandbox game developed by Mojang that allows players to build and explore infinite worlds made of blocks. With creative, survival, and multiplayer modes, it's one of the best-selling games of all time and a favorite for both kids and adults.
+                        </p>
+                        <p><a href="https://www.minecraft.net/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Minecraft</a></p>
+                    </div>
+        
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="minecraft-details">Read more about Minecraft</button>
+                </div>
+        
+                <!-- Fortnite -->
+                <div class="person-card">
+                    <img src="fortnite.jpg" width="120px" height="120px" alt="Fortnite Logo">
+                    <h3>Fortnite</h3>
+                    <p class="person-role">Category: Battle Royale / Shooter</p>
+                    <p class="person-description">A fast-paced battle royale game filled with building, dancing, and combat.</p>
+        
+                    <div class="person-details-content" id="fortnite-details">
+                        <h4>What is Fortnite?</h4>
+                        <p>
+                            Fortnite is an online battle royale game developed by Epic Games where 100 players compete to be the last one standing. Known for its vibrant visuals, creative building mechanics, and regular live events, it's a cultural phenomenon among gamers worldwide.
+                        </p>
+                        <p><a href="https://www.fortnite.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Fortnite</a></p>
+                    </div>
+        
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="fortnite-details">Read more about Fortnite</button>
+                </div>
+        
+                <!-- PUBG -->
+                <div class="person-card">
+                    <img src="pubg.jpg" width="120px" height="120px" alt="PUBG Logo">
+                    <h3>PUBG: Battlegrounds</h3>
+                    <p class="person-role">Category: Battle Royale / Shooter</p>
+                    <p class="person-description">A realistic battle royale game that helped define the genre.</p>
+        
+                    <div class="person-details-content" id="pubg-details">
+                        <h4>What is PUBG?</h4>
+                        <p>
+                            PlayerUnknown’s Battlegrounds (PUBG) is a tactical shooter where players parachute onto an island and fight to be the last person or team alive. Its realistic gunplay and survival mechanics made it a global success and pioneer of the battle royale trend.
+                        </p>
+                        <p><a href="https://pubg.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit PUBG</a></p>
+                    </div>
+        
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="pubg-details">Read more about PUBG</button>
+                </div>
+        
+                <!-- Roblox -->
+                <div class="person-card">
+                    <img src="roblox.jpg" width="120px" height="120px" alt="Roblox Logo">
+                    <h3>Roblox</h3>
+                    <p class="person-role">Category: Game Creation Platform</p>
+                    <p class="person-description">Create and play user-generated games in a massive virtual universe.</p>
+        
+                    <div class="person-details-content" id="roblox-details">
+                        <h4>What is Roblox?</h4>
+                        <p>
+                            Roblox is both a game and a game creation platform where users can build and play games made by others. It's hugely popular among younger audiences and offers a limitless variety of user-generated content across genres.
+                        </p>
+                        <p><a href="https://www.roblox.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Roblox</a></p>
+                    </div>
+        
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="roblox-details">Read more about Roblox</button>
+                </div>
+
+                <div class="person-card">
+                    <img src="callofduty.jpg" width="120px" height="120px" alt="Call of Duty Logo">
+                    <h3>Call of Duty</h3>
+                    <p class="person-role">Category: First-Person Shooter</p>
+                    <p class="person-description">A blockbuster FPS franchise known for its action-packed campaigns and competitive multiplayer.</p>
+                
+                    <div class="person-details-content" id="cod-details">
+                        <h4>What is Call of Duty?</h4>
+                        <p>
+                            Call of Duty is one of the best-selling and most-played video game series globally. Developed by Activision, it features high-intensity warfare, online multiplayer, and cooperative modes. Titles like Warzone and Modern Warfare have kept millions of players engaged daily.
+                        </p>
+                        <p><a href="https://www.callofduty.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Call of Duty</a></p>
+                    </div>
+                
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="cod-details">Read more about Call of Duty</button>
+                </div>
+                
+                <!-- League of Legends -->
+                <div class="person-card">
+                    <img src="lol.jpg" width="120px" height="120px" alt="League of Legends Logo">
+                    <h3>League of Legends</h3>
+                    <p class="person-role">Category: MOBA (Multiplayer Online Battle Arena)</p>
+                    <p class="person-description">A competitive 5v5 strategy game where champions clash in fast-paced battles.</p>
+                
+                    <div class="person-details-content" id="lol-details">
+                        <h4>What is League of Legends?</h4>
+                        <p>
+                            League of Legends (LoL), developed by Riot Games, is a highly strategic and team-based online multiplayer game. Players select unique champions and battle to destroy the enemy’s nexus in a complex arena. It's a leader in the global esports scene.
+                        </p>
+                        <p><a href="https://www.leagueoflegends.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit League of Legends</a></p>
+                    </div>
+                
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="lol-details">Read more about League of Legends</button>
+                </div>
+                
+                <!-- Genshin Impact -->
+                <div class="person-card">
+                    <img src="genshin.jpeg" width="120px" height="120px" alt="Genshin Impact Logo">
+                    <h3>Genshin Impact</h3>
+                    <p class="person-role">Category: Action RPG / Open World</p>
+                    <p class="person-description">Explore the fantasy world of Teyvat in this anime-style RPG with elemental combat.</p>
+                
+                    <div class="person-details-content" id="genshin-details">
+                        <h4>What is Genshin Impact?</h4>
+                        <p>
+                            Genshin Impact is a free-to-play action RPG developed by miHoYo, offering open-world exploration, story-driven quests, and elemental combat mechanics. Its visuals, music, and cross-platform play have attracted millions of players worldwide.
+                        </p>
+                        <p><a href="https://genshin.hoyoverse.com/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Genshin Impact</a></p>
+                    </div>
+                
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="genshin-details">Read more about Genshin Impact</button>
+                </div>
+                
+                <!-- Among Us -->
+                <div class="person-card">
+                    <img src="amongus.jpg" width="120px" height="120px" alt="Among Us Logo">
+                    <h3>Among Us</h3>
+                    <p class="person-role">Category: Party / Social Deduction</p>
+                    <p class="person-description">A multiplayer game of teamwork and betrayal aboard a spaceship or alien base.</p>
+                
+                    <div class="person-details-content" id="amongus-details">
+                        <h4>What is Among Us?</h4>
+                        <p>
+                            Among Us is a social deduction game where crewmates complete tasks while trying to identify the impostors among them. Popularized during the pandemic, it emphasizes communication, deception, and teamwork in a fun and chaotic setting.
+                        </p>
+                        <p><a href="https://www.innersloth.com/games/among-us/" target="_blank" rel="noopener noreferrer" class="external-link">Visit Among Us</a></p>
+                    </div>
+                
+                    <button class="btn-toggle-details" aria-expanded="false" aria-controls="amongus-details">Read more about Among Us</button>
+                </div>
+        
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About Neuronotes by Josh</h2>
+            <p>This platform is experimental and designed for entertainment. It showcases AI tools and apps to give you an idea of how they might help you. I created this for fun! If you have any suggestions, please click the app logos below. I'd love to hear your suggestions and feedback! 
+                What should I create next?
+            </p>
+        <hr style="2px solid black">
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: 20px;">
+            <a href="https://www.facebook.com/JoshCaffdial" target="_blank"><img src="fb.png" width="20px" height="20px"></a>
+            <a href="https://www.instagram.com/joshcaffeinated" target="_blank"><img src="social.png" width="20px" height="20px"></a>
+            <a href="https://www.github.com/JOSHDEVCAFF" target="_blank"><img src="github.png" width="20px" height="20px"></a>
+            <a href="https://youtube.com/@randomusic16?si=4r5bTFfF0XLnLAGo" target="_blank"><img src="youtube.png" width="20px" height="20px"></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=joshscz123@gmail.com&su=Inquiry" target="_blank"><img src="gmail.png" width="20px" height="20px"></a>
+        </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 JoshIdea Project.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
